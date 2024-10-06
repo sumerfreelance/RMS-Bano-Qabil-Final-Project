@@ -1,0 +1,35 @@
+.delivery-table {
+    font-family: "Poppins", Arial, sans-serif;
+    padding: 20px;
+    background-color: rgba(195, 205, 228, 0.2);
+    margin-top: 50px;
+}
+
+.search-bar {
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    padding: 10px;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+table {
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    border-radius: 2px;
+}
+
+.status {
+    color: green;
+}

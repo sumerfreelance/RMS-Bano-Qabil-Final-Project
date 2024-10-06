@@ -1,0 +1,162 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4;
+    width: 97.4%;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.search-container {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.search-input {
+    width: 100%;
+    max-width: 600px;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #5e3fbe;
+    border-radius: 4px;
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.search-input:focus {
+    border-color: #5e3fbe;
+    box-shadow: 0 4px 6px rgba(0, 123, 255, 0.2);
+}
+
+.search-input::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+
+.menu-buttons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.menu-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    transition: max-height 0.3s;
+    overflow: hidden;
+}
+
+.menu-button {
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border: 1px solid #5e3fbe;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.menu-button.active {
+    background-color: #5e3fbe;
+    color: white;
+}
+
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.menu-item {
+    background-color: #fff;
+    /* border: 1px solid #5e3fbe; */
+    border-radius: 24px;
+    padding: 20px;
+    text-align: center;
+    width: 180px;
+}
+
+.menu-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 22px;
+}
+
+.menu-item h3 {
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.menu-item p {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.toggle-button {
+    margin-top: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.toggle-button #arrow {
+    transition: transform 0.3s;
+}
+
+/* Styles for showing/hiding buttons */
+.menu-buttons.collapsed {
+    max-height: 80px;
+    /* Adjust based on the number of visible buttons */
+}
+
+.menu-buttons.expanded {
+    max-height: 500px;
+    /* Or whatever height works for your buttons */
+}
+
+.menu-buttons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.menu-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    transition: max-height 0.3s;
+    overflow: hidden;
+}
+
+.menu-buttons.collapsed {
+    max-height: 80px;
+    /* Adjust based on the number of visible buttons */
+}
+
+.menu-buttons.expanded {
+    max-height: 500px;
+    /* Or whatever height works for your buttons */
+}
+
+.toggle-button {
+    margin: 30px 10px;
+
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.toggle-button span {
+    transition: transform 0.3s;
+}
